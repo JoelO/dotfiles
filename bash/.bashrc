@@ -65,7 +65,7 @@ if [ "$color_prompt" = yes ]; then
     else
         if [ -d "$GITAWAREPROMPT" ]; then
             source "${GITAWAREPROMPT}/main.sh"
-        PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w \[$txtcyn\]${git_branch}\[$txtred\]${git_dirty}\[$txtrst\]\[\033[01;34m\]\$\[\033[00m\] '
+            PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w \[$txtcyn\]${git_branch}\[$txtred\]${git_dirty}\[$txtrst\]\[\033[01;34m\]\$\[\033[00m\] '
         else
             PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w \$\[\033[00m\] '
         fi
